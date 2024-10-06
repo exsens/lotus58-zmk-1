@@ -57,10 +57,10 @@
             //                     |  F11 |      |      |        |  |       |      |       |  F12  |
 
             bindings = <
-&to 1                 &kp F1                &kp F2           &kp F3           &kp F4       &kp F5                   &kp F6          &kp F7          &kp F8  &kp F9     &kp F10  &kp F11
-&kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp KP_MULTIPLY  &kp C_AC_SEARCH  &kp C_MUTE   &trans                   &trans          &trans          &trans  &trans     &trans   &kp F12
-&trans                &trans                &trans           &trans           &trans       &trans  &trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP  &kp RIGHT  &trans   &trans
-&trans                &kp K_UNDO            &kp K_CUT        &kp K_COPY       &kp K_PASTE  &trans  &trans  &trans   &trans          &trans          &trans  &trans     &trans   &trans
+&to 1                 &kp F1                &kp F2           &kp F3           &kp F4       &kp F5                   &kp F6          &kp F7          &kp F8       &kp F9      &kp F10  &kp F11
+&kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp KP_MULTIPLY  &kp C_AC_SEARCH  &kp C_MUTE   &trans                   &trans          &kp C_PREVIOUS  &kp C_PAUSE  &kp C_NEXT  &trans   &kp F12
+&trans                &trans                &trans           &trans           &trans       &trans  &trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP       &kp RIGHT   &trans   &trans
+&trans                &kp K_UNDO            &kp K_CUT        &kp K_COPY       &kp K_PASTE  &trans  &trans  &trans   &trans          &trans          &trans       &trans      &trans   &trans
                                                              &to 1            &trans       &trans  &trans  &kp DEL  &trans          &trans          &to 1
             >;
 
