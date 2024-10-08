@@ -64,7 +64,9 @@
                                                              &to 1            &trans       &trans  &trans  &kp DEL  &trans          &trans          &to 1
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_NEXT C_PREV>;
         };
 
         default_layer {
@@ -83,7 +85,9 @@
                                 &to 0   &kp LEFT_COMMAND  &kp LEFT_ALT  &kp SPACE         &kp ENTER          &kp BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
