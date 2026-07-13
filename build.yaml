@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: lotus58_left
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: lotus58_right
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: settings_reset
