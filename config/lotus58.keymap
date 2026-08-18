@@ -9,8 +9,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors/anti_idle_mode.dtsi>
 #include <dt-bindings/anti_idle_mode.h>
+#include <behaviors/mouse_move.dtsi>
 
 / {
+     anti_idle {
+            compatible = "zmk,anti-idle-generic";
+            interval-ms = <60000>;
+            bindings = <&mmv MOVE_DOWN, &mmv MOVE_UP>; 
+            tap_ms = <40>;  
+            wait_ms = <200>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -20,14 +29,6 @@
             layers = <1>;
             bindings = <&kp LGUI>;
         };
-    };
-
-     anti_idle {
-            compatible = "zmk,anti-idle-generic";
-            interval-ms = <60000>;
-            bindings = <&mmv MOVE_DOWN, &mmv MOVE_UP>; 
-            tap_ms = <40>;  
-            wait_ms = <200>;
     };
 
     behaviors {
