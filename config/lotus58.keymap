@@ -46,6 +46,14 @@
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
+
+        anti_idle {
+            compatible = "zmk,anti-idle-generic";
+            interval-ms = <60000>; // How often to send actions (ms)
+            bindings = <&mmv MOVE_DOWN &mmv MOVE_UP>; // Actions to perform (e.g., mouse move)
+            tap_ms = <40>;   // Duration of each action (ms)
+            wait_ms = <200>; // Delay between actions (ms)
+        };    
     };
 
     keymap {
@@ -92,12 +100,5 @@
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp C_NEXT C_PREV>;
         };
-    };
- anti_idle {
-        compatible = "zmk,anti-idle-generic";
-        interval-ms = <60000>; // How often to send actions (ms)
-        bindings = <&mmv MOVE_DOWN &mmv MOVE_UP>; // Actions to perform (e.g., mouse move)
-        tap_ms = <40>;   // Duration of each action (ms)
-        wait_ms = <200>; // Delay between actions (ms)
     };
 };
